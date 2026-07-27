@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="auth-page">
+    <div class="split-layout">
+        <div class="left-panel">
+            <div class="brand">
+                <h1>Academia Dashboard</h1>
+                <p>Welcome to the future of student management. Access your grades, courses, and schedules all in one place with a beautiful, dynamic interface.</p>
+            </div>
+            <div class="illustration">
+                <!-- Decorative geometric elements -->
+                <div class="circle circle-1"></div>
+                <div class="circle circle-2"></div>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div class="glass-form-container">
+                <div class="form-header">
+                    <h2 id="form-title">Welcome Back</h2>
+                    <p id="form-subtitle">Please enter your details to sign in.</p>
+                </div>
+                
+                <form id="auth-form">
+                    <div class="input-group" id="name-group" style="display: none;">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" placeholder="John Doe">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" required placeholder="student@university.edu">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" required placeholder="••••••••">
+                    </div>
+                    
+                    <div class="form-actions">
+                        <label class="remember-me" id="remember-me-container">
+                            <input type="checkbox"> Remember me
+                        </label>
+                        <a href="#" class="forgot-password" id="forgot-password-link">Forgot Password?</a>
+                    </div>
+                    
+                    <button type="submit" class="primary-btn pulse-animation">Sign In</button>
+                    
+                    <div class="toggle-auth">
+                        <span id="toggle-text">Don't have an account?</span> 
+                        <a href="#" id="toggle-link">Sign Up</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/auth.js"></script>
+</body>
+</html>
