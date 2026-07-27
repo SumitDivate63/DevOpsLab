@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Overview</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="dashboard-page">
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <h2>Academia</h2>
+        </div>
+        <ul class="nav-links">
+            <li class="active"><a href="#">Dashboard</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Assignments</a></li>
+            <li><a href="#">Grades</a></li>
+            <li><a href="#">Schedule</a></li>
+        </ul>
+        <div class="sidebar-footer">
+            <a href="login.html" class="logout-link">Logout</a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <header class="top-header">
+            <div class="search-bar">
+                <input type="text" placeholder="Search courses, assignments...">
+            </div>
+            <div class="user-profile">
+                <div class="avatar">JD</div>
+                <span>Jane Doe</span>
+            </div>
+        </header>
+
+        <div class="dashboard-content">
+            <h1 class="page-title">Welcome back, Jane!</h1>
+            <p class="page-subtitle">Here is what's happening with your studies today.</p>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>GPA</h3>
+                    <div class="value">3.8</div>
+                    <div class="trend positive">↑ 0.1 from last semester</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Credits Completed</h3>
+                    <div class="value">96</div>
+                    <div class="trend">Out of 120 required</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Pending Assignments</h3>
+                    <div class="value">4</div>
+                    <div class="trend negative">2 due this week</div>
+                </div>
+            </div>
+
+            <div class="content-grid">
+                <div class="chart-section card-style">
+                    <h2>Recent Activity</h2>
+                    <div class="mock-chart">
+                        <div class="bar" style="height: 60%"></div>
+                        <div class="bar" style="height: 40%"></div>
+                        <div class="bar" style="height: 80%"></div>
+                        <div class="bar" style="height: 50%"></div>
+                        <div class="bar" style="height: 90%"></div>
+                    </div>
+                </div>
+                <div class="schedule-section card-style">
+                    <h2>Today's Classes</h2>
+                    <ul class="schedule-list">
+                        <li>
+                            <div class="time">09:00 AM</div>
+                            <div class="course">Introduction to Computer Science</div>
+                            <div class="room">Room 304</div>
+                        </li>
+                        <li>
+                            <div class="time">11:30 AM</div>
+                            <div class="course">Calculus II</div>
+                            <div class="room">Room 102</div>
+                        </li>
+                        <li>
+                            <div class="time">02:00 PM</div>
+                            <div class="course">Physics Laboratory</div>
+                            <div class="room">Lab A</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
